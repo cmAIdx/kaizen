@@ -4,6 +4,10 @@ A self-improving audit system for your Claude Code setup. Run `/kaizen` and it s
 
 It gets quieter as your setup improves. That is the point.
 
+## Why "Kaizen"?
+
+[Kaizen](https://en.wikipedia.org/wiki/Kaizen) (改善, Japanese for "improvement") is a philosophy originating from post-war Japanese manufacturing — most famously the [Toyota Production System](https://en.wikipedia.org/wiki/Toyota_Production_System). The core idea: instead of large, disruptive overhauls, make small, continuous improvements as part of daily work. Every person in the process is empowered to identify waste and fix it incrementally. Over time, these small changes compound into transformative results. This tool applies that same principle to your Claude Code setup.
+
 ## What it does
 
 Each `/kaizen` session:
