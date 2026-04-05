@@ -141,7 +141,7 @@ Check for MCP configuration in:
 - `./.mcp.json`
 - `./.claude/mcp.json`
 
-Read the files to see which MCP servers are configured. Cross-reference with the `enabledMcpjsonServers` array in `.claude/settings.local.json` to see which are active.
+Read the files to see which MCP servers are configured. Cross-reference with the `enabledMcpjsonServers` array in `.claude/settings.local.json` to see which are active. Note any servers in `.mcp.json` that are not in the enabled list, or enabled servers that don't appear in any MCP config — these may indicate connectivity or configuration issues worth a `/doctor` check.
 
 ### 1.4 Commands, Agents, Skills, Rules
 
@@ -200,6 +200,7 @@ Using discovery results, evaluate against the Ultimate Guide criteria. Do this i
 - CLAUDE.md over 200 lines (context bloat)
 - No Stop hook quality gate (agent-based test verification before Claude finishes)
 - No SessionStart or PostCompact hook to re-inject critical context after compaction
+- MCP servers misconfigured (in `.mcp.json` but not enabled, or enabled but missing from config) — recommend user run `/doctor` to verify MCP health
 
 **Context Optimization (Important):**
 - `.claude/rules/*.md` files without `paths:` frontmatter (loads into every session instead of only when matching files are touched)
