@@ -1,4 +1,4 @@
-# 改善 Kaizen for Claude Code
+# 改善 Kaizen for CC
 
 A self-improving audit system for your Claude Code setup. Run `/kaizen` and it scans your configuration, surfaces actionable improvements, executes fixes on approval, and tracks progress across sessions.
 
